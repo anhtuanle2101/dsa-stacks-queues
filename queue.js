@@ -46,10 +46,10 @@ class Queue {
       this.size = 0;
       return temp.val;
     }
-    let temp = this.first;
-    this.first = temp.next;
+    let tempNode = this.first;
+    this.first = tempNode.next;
     this.size-=1;
-    return temp.val;
+    return tempNode.val;
   }
 
   /** peek(): return the value of the first node in the queue. */
