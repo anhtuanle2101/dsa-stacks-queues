@@ -41,10 +41,11 @@ class Stack {
       throw Error("The stack is empty");
     }
     if (this.size===1){
+      const tempNode = this.first;
       this.first = null;
       this.last = null;
       this.size = 0;
-      return undefined;
+      return tempNode.val;
     }
     const tempNode = this.first;
     this.first = tempNode.next;
